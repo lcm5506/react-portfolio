@@ -1,0 +1,11 @@
+.typing-animation::after{
+    content: '|';
+    animation: blink 1.1s steps(2, start) infinite;
+    color: var(--color-primary);
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}

@@ -1,0 +1,40 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 5rem;
+    background-color: var(--color-gray2);
+    color: var(--color-primary);
+}
+.brand{
+    flex: 2;
+}
+.brand h1{
+    font-family: 'Righteous', cursive;
+}
+
+.contact{
+    flex: 4;
+}
+.contact-item{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: .7rem 3rem;
+}
+
+@media (max-width: 960px){
+    .footer{
+        flex-direction: column;
+        padding: 1rem 2rem;
+    }
+    .contact,
+    .contact-icon,
+    .contact-text{
+        font-size: 1rem;
+    }
+    .contact-item{
+        font-size: 1rem;
+        margin: .5rem;
+    }
+}

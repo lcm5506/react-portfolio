@@ -1,0 +1,28 @@
+.brand-icon{
+    margin-right: 1rem;
+    display: inline-block;
+    justify-self: center;
+    transition: all .4s ease-in-out;
+}
+.navbar-brand{
+    margin: 0 2rem;
+}
+.navbar-brand > h3 {
+    font-family: 'Righteous', cursive;
+}
+.fa-face-smile-wink{
+    transform: rotate(-30deg) translate(-5px, -5px);
+}
+.fa-hand{
+    transform: rotate(30deg) scale(70%);
+}
+.nav-link {
+    font-family: 'Vollkorn', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.navbar{
+    box-shadow: 0 2px 5px 5px rgb(0,0,0,0.5);
+    z-index: 1;
+}

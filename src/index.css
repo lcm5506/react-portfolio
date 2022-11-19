@@ -1,8 +1,11 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
+  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  font-family: 'Vollkorn', serif;
+  /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +13,280 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:root{
+  --color-primary: #fff;
+  /* --color-secondary: rgb(92, 235, 92); */
+  
+  --color-secondary: rgb(61, 206, 109);
+  --color-gray1: rgb(25,25,25);
+  --color-gray2: rgb(50,50,50);
+  --color-gray3: rgb(75,75,75);
+  --color-gray4: rgb(100,100,100);
+  --color-gray5: rgb(125,125,125);
+  --color-gray6: rgb(150,150,150);
+  --color-gray7: rgb(175,175,175);
+  --color-black: #000;
+  --color-darkblue: rgb(15, 15, 61);
+  --color-blue: rgb(28, 28, 105);
+  --color-bg-secondary: rgb(42, 161, 82);
+  --color-bg-secondary-darker: rgb(28, 107, 54);
+  --color-bg-secondary-darker2: rgba(42, 161, 82, 0.548);
+  
+  --color-secondary-shadow: rgb(42, 161, 82, 0.3);
+  --color-tertiary-shadow: rgb(42, 161, 82, 0.5);
+}
+.d1-text-shadow{
+  /* text-shadow: 8px 8px 2px rgb(0,0,0,.5); */
+  /* text-shadow: 20px 20px 5px var(--color-tertiary-shadow); */
+  text-shadow: 10px 10px 10px rgb(0,0,0,0.3);
+  /* text-shadow: 10px 10px 5px var(--color-tertiary-shadow); */
+}
+
+.d2-text-shadow{
+  /* text-shadow: 5px 5px 2px var(--color-tertiary-shadow); */
+  text-shadow: 5px 5px 5px rgb(0,0,0,0.3);
+}
+
+.section-container{
+  padding: 1rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+  gap: 2rem;
+  width: 80%;
+}
+.secondary-text{
+  color: var(--color-secondary);
+}
+.abridged-text {
+  display: none;
+}
+.abridged-text-dots{
+  display: inline-block;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+.card-container{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card-sm{
+  flex-basis: 50%;
+  flex: 1;
+  margin: 1rem;
+  box-shadow: 3px 3px 5px rgb(0,0,0,0.5);
+}
+.card-md{
+  flex-basis: 30%;
+  flex: 1;
+  margin:2rem;
+  box-shadow: 5px 5px 10px rgb(0,0,0,0.5);
+  cursor: pointer;
+}
+.card-link:link,
+.card-link:visited{
+  color: var(--color-secondary);
+}
+.hover-float {
+  transition: all .8s ease-out;
+}
+.hover-float:hover {
+  transform: translateY(-5px) scale(103%);
+  box-shadow: 10px 10px 15px rgb(0,0,0,0.5);
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+.ja-center{
+  align-items: center;
+  justify-content: center;
+}
+.flex-column-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-container{
+  padding: 8rem 3rem;
+  /* border: 3px solid red; */
+}
+.bg-dark{
+  color: var(--color-primary);
+}
+.bg-light{
+  color: var(--color-black);
+}
+.vertical-rule{
+  height: 250px;
+  width: 3px;
+  background: linear-gradient(to bottom, var(--color-gray2), var(--color-gray7), var(--color-gray2));
+  content: '';
+  margin: 1rem 3rem;
+}
+.bg-dark .vertical-rule{
+  height: 250px;
+  width: 3px;
+  background: linear-gradient(to bottom, var(--color-gray7), var(--color-gray2), var(--color-gray7));
+  content: '';
+  margin: 1rem 3rem;
+}
+.grid-2-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+.hr-text{
+  display: inline-block;
+  /* flex-wrap:nowrap; */
+  white-space: nowrap;
+  overflow:visible;
+  /* flex-direction: row; */
+}
+.hr-text::before{
+  content: '';
+  display: inline-flex;
+  width: 10%;
+  height: 3px;
+  background:linear-gradient(to right, transparent, var(--color-black));
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+.bg-dark .hr-text::before{
+  background:linear-gradient(to right, transparent, var(--color-primary));
+}
+
+.hr-text::after{
+  content: '';
+  display: inline-flex;
+  width: 10%;
+  height: 3px;
+  background:linear-gradient(to right, var(--color-black), transparent);
+  vertical-align: middle;
+  margin-left: 1rem;
+}
+
+.bg-dark .hr-text::after{
+  background:linear-gradient(to right, var(--color-primary), transparent);
+}
+
+.mh-auto{
+  margin: 0 auto;
+}
+
+.contact-text a:link,
+.contact-text a:visited {
+  color: var(--color-secondary);
+}
+
+.contact-icon i{
+  margin-right: .5rem;
+}
+#email-form{
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+#email-form input,
+#email-form textarea {
+  width: 100%;
+  margin: .5rem 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--color-gray5);
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  caret-color: var(--color-secondary);
+}
+#email-form textarea{
+  resize: none;
+}
+
+#email-form input:focus, 
+#email-form textarea:focus {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+/* Scrollbar */
+*::-webkit-scrollbar{
+  width: 15px;
+}
+*::-webkit-scrollbar-track{
+  background-color: rgba(33,37,41);
+}
+*::-webkit-scrollbar-thumb{
+  background-color: var(--color-gray5);
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-primary);
+}
+
+
+@media screen and (max-width:960px) {
+  .grid-2-columns {
+    grid-template-columns: 1fr;
+  }
+  .card-container{
+    flex-direction: column;
+  }
+  .section-container{
+    padding: 1rem 0;
+    width: 100%;
+  }
+  .card-md{
+    flex-basis: 100%;
+    flex: 1;
+    margin:1rem;
+    box-shadow: 5px 5px 10px rgb(0,0,0,0.5);
+    cursor: pointer;
+  }
+  .contact-container{
+    margin: 3rem 0;
+  }
+  .hr-text{
+    white-space: normal;
+  }
+  .hr-text::before,
+  .hr-text::after{
+    display:none;
+  }
+  .card-sm{
+    margin-top: 2rem !important;
+  }
+  .skilltree-img{
+    width: 100%;
+  }
+  .mmodal .mmodal-container{
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0 8rem 0;
+  }
+  .mmodal .mmodal-container .modal-text{
+    padding: 0;
+    margin: 2rem 0;
+    font-size:1rem;
+  }
+  .mmodal .mmodal-container .modal-link{
+    font-size:1rem;
+  }
+  #email-form{
+    padding: 0;
+  }
 }

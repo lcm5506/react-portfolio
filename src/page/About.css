@@ -1,0 +1,154 @@
+.intro-text{
+    line-height: 3rem;
+}
+.skill-bar-item-container{
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    /* border: 1px solid black; */
+    gap: 1rem;
+}
+
+.skill-header{
+    display: block;
+}
+.skill-bar,
+.skill-percentage {
+    display: inline-block;
+}
+.skill-percentage{
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
+.skill {
+    width: 100%;
+    padding: 1rem;
+}
+
+.skill-bar{
+    width: 75%;
+    background-color: var(--color-gray4);
+    height: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+.card {
+    height: fit-content;
+    padding: 1rem .2rem;
+}
+.card-sm:nth-child(odd){
+    margin-top: 5rem;
+}
+.card-sm:nth-child(even){
+    margin-top: 10rem;
+}
+.skill-bar-fill{
+    content: '';
+    height: 10px;
+    border-radius: 10px;
+    position: absolute;
+    left:0;
+    background-color: var(--color-secondary);
+    transition: all 2s ease-out;
+    width: 0;
+}
+
+.section-container.on-screen #fill-HTML{
+    width: 70%;
+}
+.section-container.on-screen #fill-Java{
+    width: 80%;
+}
+.section-container.on-screen #fill-CSS{
+    width: 70%;
+}
+.section-container.on-screen #fill-Javascript{
+    width: 90%;
+}
+.section-container.on-screen #fill-SQL{
+    width: 60%;
+}
+.section-container.on-screen #fill-React{
+    width: 70%;
+}
+
+
+/* disable hover effect and link for the imported tree from'smartdraw'  */
+.SDJS_embed_18646 > div,
+.SDJS_embed_94752 > div{
+    background-color: var(--color-bg-primary) !important;
+}
+
+.SDJS_embed_18646 a,
+.SDJS_embed_94752 a{
+    pointer-events: none;
+}
+
+.SDJS_embed_18646:hover .SDJS_fade,
+.SDJS_embed_94752:hover .SDJS_fade{
+    opacity: 0 !important;
+}
+
+.tree-container{
+    margin: 0 auto;
+}
+
+.mb-8{
+    margin-bottom: 5rem;
+}
+
+/* Timeline Subsection*/
+.timeline-container{
+    gap: 5rem;
+}
+.timeline{
+    padding: 0 2rem 0 4rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.timeline *{
+    transition: all .8s ease-out;
+    line-height: 2rem;
+}
+.timeline-icon{
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    top: -5px;
+    left: -5px;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--color-bg-secondary);
+    box-shadow: 5px 5px 10px var(--color-shadow);
+}
+
+.timeline-title {
+    color: var(--color-secondary);
+    margin-bottom: 0;
+}
+.timeline-company > span{
+    opacity: 0.8;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.timeline-content{
+    font-size:1.1rem;
+  }
+
+.timeline:hover .timeline-icon{
+    transform: translateY(-5px) scale(110%);
+    box-shadow: 10px 10px 15px var(--color-shadow);
+}
+.timeline:hover .timeline-company,
+.timeline:hover .timeline-title,
+.timeline:hover .timeline-year,
+.timeline:hover .timeline-content{
+    transform: translateY(-3px);
+    text-shadow: 3px 3px 5px var(--color-shadow);
+}

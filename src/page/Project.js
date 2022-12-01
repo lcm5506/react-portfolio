@@ -16,6 +16,43 @@ function Project() {
             className="card-md hover-float bg-dark"
             img={
               <img
+                src={require("../image/Web_google_docs_clone.png")}
+                alt="Screenshot of Google Docs Clone implemented with MERN stack"
+                class="card-img card-img-top"
+              />
+            }
+            title="Google Docs Clone"
+            text={
+              <>
+                Implemented with MERN stack. Allows editing of a single document
+                by multiple users. Changes made on your client are reflected on
+                other clients in real time.
+                <span className="abridged-text-dots">...</span>
+                <span class="abridged-text">
+                  Client has document selection page which displays list of all
+                  documents in the database.
+                  <br />
+                  Selecting a exiting document or creating new document opens
+                  simple text editor with basic functionalities expected of
+                  modern text editors. <br />
+                  Client creates websocket connection to broadcast changes made
+                  to the document to other clents connected.
+                  <br />
+                  Documents are autosaved at 5s interval. <br />
+                  Server is a simple REST API for CRUD operation on documents in
+                  the database. <br />
+                  Server also contains websocket layer to relay changes in
+                  documents from user to user in real time.
+                </span>
+              </>
+            }
+            git="https://github.com/lcm5506/google-docs-clone"
+            modalEnable={true}
+          />
+          <Card
+            className="card-md hover-float bg-dark"
+            img={
+              <img
                 src={require("../image/Sort_Algorithm_Visualizer.png")}
                 alt="Screenshot of Sorting Algorithm Visualizer Application developed in HTML, CSS and Javascript"
                 class="card-img card-img-top"
@@ -86,6 +123,7 @@ function Project() {
             modalEnable={true}
           />
 
+          <div className="flex-break"></div>
           <Card
             className="card-md hover-float bg-dark"
             img={
@@ -116,6 +154,27 @@ function Project() {
             external={"./projects/DiscordCloneDemo/index.html"}
             modalEnable={true}
           />
+          <Card
+            className="card-md hover-float bg-dark"
+            img={
+              <img
+                src={require("../image/react-portfolio.png")}
+                alt="Screenshot of this portfolio website built with react"
+                class="card-img card-img-top"
+              />
+            }
+            title={<>React Portfolio</>}
+            text={
+              <>
+                This is my first project built using React. This is a portfolio
+                website to introduce myself.
+              </>
+            }
+            git={"https://github.com/lcm5506/react-portfolio"}
+            external={"https://charleeportfolio.com/"}
+            modalEnable={true}
+          />
+
           {/* <Card
             className="card-md hover-float bg-dark"
             img={}

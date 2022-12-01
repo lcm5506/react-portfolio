@@ -17,9 +17,9 @@ function Card(props) {
         {props.img}
         <div className="card-body">
           {props.title && (
-            <h3 className="card-title font-weight-bold font-italic">
+            <h4 className="card-title font-weight-bold font-italic">
               {props.title}
-            </h3>
+            </h4>
           )}
           {props.text && (
             <p className="card-text font-weight-light">{props.text}</p>

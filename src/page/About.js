@@ -86,7 +86,7 @@ function About() {
             <div class="skill-bar">
               <div class="skill-bar-fill" id="fill-CSS"></div>
             </div>
-            <h6 class="skill-percentage text-content">70%</h6>
+            <h6 class="skill-percentage text-content">80%</h6>
           </div>
 
           <div class="skill">
@@ -105,6 +105,13 @@ function About() {
           </div>
           <div class="skill">
             <h4 class="skill-header header-4">React</h4>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" id="fill-React"></div>
+            </div>
+            <h6 class="skill-percentage text-content">80%</h6>
+          </div>
+          <div class="skill">
+            <h4 class="skill-header header-4">Node.js & Express.js</h4>
             <div class="skill-bar">
               <div class="skill-bar-fill" id="fill-React"></div>
             </div>
